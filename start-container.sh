@@ -27,7 +27,7 @@ do
 	                --hostname hadoop-slave$i \
 	                jackluo/hadoop:2.7.2 > /dev/null 2>&1
 	echo "先启动journalnode..."
-	sudo docker exec -it hadoop-slave$i hadoop-daemon.sh start journalnode
+	#sudo docker exec -it hadoop-slave$i hadoop-daemon.sh start journalnode
 	echo "...格式完成..."
 	i=$(( $i + 1 ))
 done 
