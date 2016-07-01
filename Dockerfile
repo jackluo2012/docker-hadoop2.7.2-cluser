@@ -2,8 +2,9 @@ FROM jackluo/hadoop-base:1.1
 # install openssh-server, openjdk and wget
 
 RUN mkdir -p /opt/modules
-RUN mkdir -p /opt/data/tmp
+#RUN mkdir -p /opt/data/tmp
 RUN mkdir -p /home/hadoop/
+RUN mkdir -p /home/hadoop/hadoop-2.7.2/tmp/dfs/name
 
 ADD hadoop-2.7.2.tar.gz /opt/modules/
 ENV HADOOP_HOME /opt/modules/hadoop-2.7.2
